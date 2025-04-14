@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color: rgba(0, 0, 0, 0.42);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 182px auto 0;
+  max-width: 935px;
+  padding-bottom: 32px;
+  height: 630px;
+}
+.image {
+  display: inline-block;
+  background-image: url(images/chap2.png);
+  background-size: 468.32px 634.15px;
+  height: 581.15px;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  width: 49%;
+
+}
+.slide_show {
+  width:250px;
+  height:100%; 
+  overflow:hidden;
+  margin: 27px 00 113px !important; 
+  position:relative;
+  left: 160px;
+  text-align: left;
+}
+.slide_show img {
+  position:absolute; 
+  animation:slide_show 20s infinite; 
+  opacity:0; 
+  width: 250px; 
+  height: auto;
+}
+
+@keyframes slide_show {
+  25%{opacity:1;} 
+  40%{opacity:0;}
+}
+
+
+.slide_show img:nth-child(4) {
+  animation-delay: 0s;
+}
+
+.slide_show img:nth-child(3) {
+  animation-delay: 5s;
+}
+.slide_show img:nth-child(2) {
+  animation-delay: 10s;
+}
+.slide_show img:nth-child(1) {
+  animation-delay: 15s;
+}
+
+.content {
+  width: 42%;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 350px ;
+  padding: 43px 0;
+
+}
+
+.l_border {
+  border-radius: 1px;
+  max-width: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 10px 0 !important;
+  background-color: white;
+  margin-top: 10px;
+}
+.logo img {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+.form form {
+  margin-bottom: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+.input {
+  margin-top: 24px;
+}
+.input_border {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  height: 40px;
+  width: 250px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+input:focus {
+  border: 1px solid rgba(160, 159, 159, 0.685);
+  outline: none;
+  border-radius: 3px;
+   
+}
+label {
+  margin: 1px 0;
+  position: relative;
+  display: inline-block;
+}
+.spn {
+  font-size: 12px;
+  color: #8E8E8E;
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+}
+
+.pas_show  {
+  text-align: right;
+  position: absolute;
+  right: 14px;
+  bottom: 13px;
+  display: none;
+  border: none;
+  background-color: #FAFAFA;
+  font-size: 14px;
+}
+
+.user:fullscreen + span, .user:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-40%) translateX(-35px);
+  }
+.pass_in:fullscreen + span, .pass_in:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-40%) translateX(-9px);
+  
+  }
+
+.pass {
+  margin-top: 6px;
+
+}
+
+.pass_in {
+  position: relative;
+}
+
+.log_btn button {
+  background-color: rgba(116, 200, 221, 0.815);
+  border: 1px solid rgba(116, 200, 221, 0.815);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 9px;
+  margin: 14px 8px;
+  text-align: center;
+  color: white;
+  width: 250px;
+  opacity: 1;
+}
+.forgot a{
+  /* border: none; */
+  color: #00376B;
+  font-size: 12px;
+}
+.forgot a:active {
+  color: #00376b6e;
+
+}
+.sign {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 20px 0 !important;
+  margin-bottom: 20px !important;
+}
+.sign p {
+  display: inline-block;
+  font-size: 14px;
+  color: #262626;
+}
+.sign a {
+  display: inline-block;
+  color: #4FC0FB;
+}
+.sign a:active {
+  color: #4fbffba8;
+}
+.img_link p {
+  margin: 10px 20px;
+  color: #262626 ;
+}
+.l_img {
+  margin: 20px 0;
+}
+footer {
+  margin-top: 200px;
+  padding: 0 16px;
+  font-size: 12px;
+}
+.f {
+  margin-bottom: 52px;
+}
+footer a {
+  
+  color: rgb(142,142,142);
+}
+.f1 ,
+.f2 {
+  margin-top: 16px;
+  text-align: center;
+  padding: 0 12vw;
+  line-height: 10px;
+  
+}
+.f1_link {
+  margin: 0 8px 12px 8px;
+  display: inline-block;
+
+}
+#sel {
+  border: none;
+  color: rgb(142,142,142);
+  background-color:#FAFAFA ;
+  width: 65px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url(images/chevron-down--13263.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 11px;
+}
+
+@media screen and (max-width: 876px) {
+  .image {
+    display: none;
+  }
+  
+}
