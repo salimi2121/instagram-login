@@ -248,5 +248,8 @@ footer a {
   .image {
     display: none;
   }
+  .content {
+    width: 85%;
+  }
   
 }
